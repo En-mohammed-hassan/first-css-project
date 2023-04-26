@@ -1,4 +1,7 @@
 
+:root{
+    --main-color: #10cab7;
+}
 /* start global rules */
 *{
     -webkit-box-sizing: border-box;
@@ -82,7 +85,60 @@ margin-right: auto;
     position: absolute;
     right: 0;
     min-width: 200px;
-    top: calc(100%+15px);
+    top: calc(100% + 15px);
+    display: none;
+    z-index: -1;
+}
+.header .links:hover ul{
+    display: block;
+}
+.header .links ul::before{
+    content: "";
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent transparent #f6f6f6 transparent;
+    position: absolute;
+    right: 0;
+    top: -20px;
+}
+.header .links ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    transition: 0.4s;
+    color: #0a70b9;
+}
+.header .links ul li a:hover{
+    padding-left: 25px;
+}
+.landing{
+    background-size: cover;
+    background-image: url(../images/landing.jpg);
+    position: relative;
+    height: calc(100vh - 64px);
+}
+.landing .intro-text{
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    width: 320px;
+    max-width: 100%;
+    
+}
+.landing h1{
+    margin: 0;
+    color: var(--main-color);
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+   
+
+}
+.landing p{
+    line-height: 1.8;
+    font-size: 20px;
 
 }
 /* end header */
