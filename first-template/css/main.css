@@ -294,11 +294,52 @@ line-height: 1.8;
 text-align: center;
 
 }
-@media (max-width : 768px){
-    .portfolio .portfolio-content .card h3{
-    }
-    .portfolio .portfolio-content .card p{
+.contact{
+    background-color: #f6f6f6;
+    padding: 60px 0;
     text-align: center;
 }
+.contact .info {
+    text-align: center;
+    margin: 40px 0;
+}
+.contact .info .lable{
+    font-size: 30px;
+    font-weight: 800;
+    color: #333;
+    padding-bottom: 30px;
 
+}
+.contact .info .link{
+    display: block;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--main-color);
+    padding-bottom : 30px;
+    
+}
+.contact .info .social{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+
+
+}
+.contact .info .social i{
+    color: var(--main-color);
+    padding-left: 20px;
+}
+.foot{
+    background-color: #333;
+    text-align: center;
+    font-size: 19px;
+    padding: 30px 10px ;
+    color:white;
+   
+    
+}
+.foot span{
+    color: #10cab7;
+    font-weight: 800;
 }
